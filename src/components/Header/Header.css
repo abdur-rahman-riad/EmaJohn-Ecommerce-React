@@ -1,0 +1,62 @@
+.header{
+    background-color: rgb(255, 248, 240);
+    padding: 15px 0;
+    box-shadow: 1px 1px 2px gray;
+}
+.nav-bar{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+    margin: 10px 0;
+}
+.nav-item a{
+    text-decoration: none;
+    margin: 0 3px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+.nav-item a:hover{
+    background-color: teal;
+    color: white;
+    transition: background-color 0.5s ease-in-out;
+}
+.search-option{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) 80px ;
+    align-items: center;
+}
+.search-filed{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-filed input{
+    width: 100%;
+    padding: 5px;
+}
+.search-filed button{
+    padding: 7px 12px;
+    margin: 0 5px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cart-count{
+    font-size: 22px;
+    font-weight: bold;
+}
