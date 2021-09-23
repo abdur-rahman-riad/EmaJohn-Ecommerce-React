@@ -1,0 +1,22 @@
+.cart-item{
+    padding:0 10px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+}
+.place-order{
+    width: 100%;
+    margin: 20px 0;
+    padding:8px 0;
+    background-color: darkblue;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.place-order:hover{
+    background-color: #0000ff;
+}

@@ -1,5 +1,5 @@
 .header{
-    background-color: rgb(255, 248, 240);
+    background-color: white;
     padding: 15px 0;
     box-shadow: 1px 1px 2px gray;
 }
@@ -29,25 +29,17 @@
     transition: background-color 0.5s ease-in-out;
 }
 .search-option{
-    width: 80%;
+    width: 70%;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 80px ;
+    grid-template-columns: 1fr 100px ;
     align-items: center;
 }
-.search-filed{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.search-filed input{
-    width: 100%;
+.search-option input{
     padding: 5px;
 }
-.search-filed button{
-    padding: 7px 12px;
+.search-option button{
+    padding: 8px 12px;
     margin: 0 5px;
     background-color: teal;
     color: white;

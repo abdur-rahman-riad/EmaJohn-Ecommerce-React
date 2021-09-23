@@ -19,13 +19,8 @@ const Header = () => {
 
             {/* Search Option Design */}
             <div className="search-option">
-                <div className="search-filed">
-                    <input type="text" placeholder="Search your products" />
-                    <button>Search</button>
-                </div>
-                <div className="cart-count">
-                    00
-                </div>
+                <input type="text" placeholder="Search your products" />
+                <button>Search</button>
             </div>
         </div>
     );

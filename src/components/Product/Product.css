@@ -18,10 +18,16 @@
 }
 .single-product button{
     border: none;
-    background-color: crimson;
-    padding: 5px 20px;
+    background-color: darkblue;
+    padding: 8px 20px;
     color: white;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
+}
+.single-product button:hover{
+    background-color: #0000ff;
+}
+.price{
+    color: orangered;
 }
