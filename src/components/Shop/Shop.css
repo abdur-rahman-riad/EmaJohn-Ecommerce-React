@@ -1,0 +1,22 @@
+.shop-container{
+    width: 80%;
+    margin:12px auto;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 3fr 1fr;
+}
+.product-container{
+    box-shadow: 1px 1px 1px 1px #bebebe;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(255, 248, 240);
+}
+.cart-container{
+    box-shadow: 1px 1px 1px 1px #bebebe;
+    height: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border-right: 2px solid darkblue;
+    border-left: 2px solid darkblue;
+}

@@ -1,0 +1,27 @@
+.single-product{
+    display: grid;
+    grid-template-columns: 1.2fr 2.8fr;
+    grid-column-gap: 15px;
+    align-items: center;
+    padding:15px;
+    /* border: 2px solid teal; */
+    margin: 15px 8px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #b3b2b2;
+    background-color: white;
+}
+.single-product h4,p{
+    margin: 3px 0;
+}
+.single-product h3{
+    margin: 5px 0;
+}
+.single-product button{
+    border: none;
+    background-color: crimson;
+    padding: 5px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
