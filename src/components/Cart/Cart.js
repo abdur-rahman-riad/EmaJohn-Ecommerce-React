@@ -5,11 +5,16 @@ const Cart = (props) => {
     const { cart } = props;
 
     // Price Calculation
+    let totalQuantity = 0;
     let price = 0;
     let totalPrice = 0;
     for (const product of cart) {
-        price = price + product.price;
+        if (!product.quantity) {
+            product.quantity = 1;
+        }
+        price = price + product.price * product.quantity;
         totalPrice = price.toFixed(2);
+        totalQuantity = totalQuantity + product.quantity;
     }
 
     // Delivery Charge
@@ -24,15 +29,21 @@ const Cart = (props) => {
     const subTotal = deliveryCharge + itemsPrice;
 
     // Tax
-    let tax = parseFloat(itemsPrice * 0.10);
+    const tax = itemsPrice * 0.10;
     const taxCost = tax.toFixed(2)
 
     // In Total
-    const grandTotal = parseFloat(itemsPrice + deliveryCharge + taxCost);
+    const taxAmount = parseFloat(taxCost);
+    const grandTotal = subTotal + taxAmount;
     const grandTotalCost = grandTotal.toFixed(2);
 
     return (
         <div>
+            <div className="cart-title">
+                <h3>Order Summary</h3>
+                <h4>Items Order: {totalQuantity}</h4>
+            </div>
+            <hr />
             <div className="cart-item">
                 <p>Items Price: </p>
                 <p>${totalPrice}</p>

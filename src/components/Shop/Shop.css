@@ -20,12 +20,3 @@
     border-right: 2px solid darkblue;
     border-left: 2px solid darkblue;
 }
-.cart-title{
-    text-align: center;
-}
-.cart-title h3, h4{
-    margin:0;
-}
-.cart-container hr{
-    color: darkblue;
-}

@@ -20,3 +20,9 @@
 .place-order:hover{
     background-color: #0000ff;
 }
+.cart-title{
+    text-align: center;
+}
+h3, h4{
+    margin: 0;
+}
